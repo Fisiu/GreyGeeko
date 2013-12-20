@@ -279,7 +279,7 @@ style "notebook" = "notebook-bg"
 
 style "menu"
 {
-	ythickness        = 1
+	ythickness        = 3
 	xthickness        = 0
 	GtkMenuBar	:: shadow-type		= GTK_SHADOW_NONE
 	
