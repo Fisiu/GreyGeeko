@@ -1,11 +1,11 @@
-# Author: Simon Steinbeiß
+# Author: Mariusz Fik
 # Theme: Greybird
 # based on "Bluebird" by Simon Steinbeiß and Pasi Lallinaho
 # Description: As is the original theme, this theme is 100% free and open source.
 
 gtk_color_scheme	= "bg_color:#CECECE\nselected_bg_color:#83AF77\nbase_color:#fcfcfc" # Background, base.
 gtk_color_scheme	= "fg_color:#3C3C3C\nselected_fg_color:#ffffff\ntext_color:#000000" # Foreground, text. 
-gtk_color_scheme	= "tooltip_bg_color:#000000\ntooltip_fg_color:#E1E1E1" # Tooltips.
+gtk_color_scheme       = "tooltip_bg_color:#1C2122\ntooltip_fg_color:#E7FDFF" # Tooltips.
 gtk_color_scheme	= "link_color:#2c82dd" # Hyperlinks
 gtk_color_scheme	= "panel_bg:#686868" # Panel bg color
 gtk_color_scheme	= "fm_color:#F7F7F7" # Color used in Nautilus and Thunar.
@@ -279,7 +279,7 @@ style "notebook" = "notebook-bg"
 
 style "menu"
 {
-	ythickness        = 3
+	ythickness        = 0
 	xthickness        = 0
 	GtkMenuBar	:: shadow-type		= GTK_SHADOW_NONE
 	
@@ -341,6 +341,12 @@ style "menubar-menuitem"
         {
 		lightborder_shade = 1.5
         }
+}
+
+style "menu-item"
+{
+    ythickness = 3
+    xthickness = 0
 }
 
 style "separator-menu-item"
@@ -702,8 +708,9 @@ widget_class "*<GtkViewport>*"		style "wider"
 widget_class "*<GtkEntry>*"		style "wider"
 
 widget_class "*<GtkMenuBar>.<GtkMenuItem>*" style "menubar-menuitem"
-widget_class "*<GtkMenu>*"              style "menu"
-widget_class "*<GtkMenuBar>*"		style "menubar"
+widget_class "*<GtkMenu>*"                  style "menu"
+widget_class "*<GtkMenuItem>*"              style "menu-item"
+widget_class "*<GtkMenuBar>*"		        style "menubar"
 widget_class "*<GtkSeparatorMenuItem>*" style "separator-menu-item"
 # Scale widget in menus (e.g. ubuntu's sound indicator)
 widget_class "*<GtkMenuItem>.*.<GtkScale>" style "scale"
