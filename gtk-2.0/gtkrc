@@ -422,7 +422,7 @@ style "progressbar"
 		gradient_shades = {1.15,1.05,1.0,0.95}
 		trough_shades	= {0.95, 1.15}
 		trough_border_shades	= { 0.8, 0.7 }
-		roundness 	= 4
+		roundness 	= 2
 		contrast	= 0.8
 		border_shades	= { 1.0, 0.8 }
 		lightborder_shade   = 1.1
@@ -444,7 +444,7 @@ style "scrollbar"
 
 	engine "murrine"
 	{
-		roundness	= 4
+		roundness	= 2
 		border_shades	= {0.75, 0.75}
 		trough_shades	= {1.1, 1.3}
 		contrast	= 0.05
