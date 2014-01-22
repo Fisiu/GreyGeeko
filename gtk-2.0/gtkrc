@@ -78,10 +78,10 @@ style "default"
 	GtkTreeView		::vertical-separator			= 0
 
 	GtkWidget		::focus-line-width			= 1
-	GtkWidget		::focus-padding				= 0
+	GtkWidget		::focus-padding				= 1
 	
-	GtkWindow		::resize-grip-height			= 13
-        GtkWindow		::resize-grip-width			= 13
+	GtkWindow		::resize-grip-height		= 13
+    GtkWindow		::resize-grip-width			= 13
 
 	xthickness = 1
 	ythickness = 1
@@ -122,7 +122,7 @@ style "default"
 		default_button_color = mix (0.2, shade(0.9,@base_color), shade (0.9, @selected_bg_color))
 		expanderstyle	    = 0
 		focus_color         = mix (0.1, @bg_color, shade (0.7, @selected_bg_color))
-		focusstyle	    = 3
+		focusstyle			= 2
 		glazestyle          = 1                 # 0 = flat highlight, 1 = curved highlight, 2 = concave style, 3 = top curved highlight, 4 = beryl highlight
 		gradient_shades     = {1.2,1.0,1.0,0.9} #{1.1,1.0,1.0,0.87}
 		glowstyle           = 4                 # 0,1,2,3,4
@@ -272,7 +272,7 @@ style "notebook" = "notebook-bg"
 	engine "murrine" {
 		contrast		= .6
 		gradient_shades		= {1.1,1.05,1.05,1.0}
-		#focusstyle		= 2
+		focusstyle		= 1
 		#lightborder_shade	= 1.16
 	}
 }
